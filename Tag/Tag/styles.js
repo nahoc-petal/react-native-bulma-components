@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
-  button: {
-    paddingVertical: 8,
-    paddingHorizontal: 16,
+  tag: {
+    paddingVertical: 6,
+    paddingHorizontal: 10,
     borderRadius: 4,
     backgroundColor: 'white',
     borderWidth: 1,
@@ -11,21 +11,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  gap: {
+    marginRight: 6,
+  },
   text: {
     textAlign: 'center',
     color: '#363636',
   },
-  small: {
-    fontSize: 14,
-  },
   normal: {
-    fontSize: 16,
-  },
-  medium: {
-    fontSize: 18,
-  },
-  large: {
-    fontSize: 24,
+    fontSize: 12,
   },
   primary: {
     backgroundColor: '#00d1b2',
@@ -34,24 +28,12 @@ const styles = StyleSheet.create({
   rounded: {
     borderRadius: 100,
   },
-  fullWidth: {
-    width: '100%',
-  },
   white: {
     color: 'white',
   },
   black: {
     color: '#363636',
   },
-  disabled: {
-    opacity: 0.4,
-  },
-  textDisabled: {
-    opacity: 0.8,
-  },
-  loading: {
-    opacity: 0.8,
-  }
 });
 
 export default styles;

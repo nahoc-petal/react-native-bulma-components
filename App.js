@@ -10,6 +10,9 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import {Button} from './Button'
 import {Box} from './Box'
+import {Tag} from './Tag/Tag'
+import {TagGroup} from './Tag/TagGroup'
+import {Notification} from './Notification'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -23,14 +26,34 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
+      <Notification>        <Text style={styles.welcome}>Welcome to React Native!</Text></Notification>
+
         <Button 
           size='large'
           text={'My button lol'}
           color={'primary'}
           textColor='white'
           ></Button>
+
+          <TagGroup>
+          <Tag 
+          color="primary"
+          textColor="white"
+          text="allo allo"
+          ></Tag>
+                    <Tag 
+          color="primary"
+          textColor="white"
+          text="allo allo"
+          ></Tag>
+                    <Tag 
+          color="primary"
+          textColor="white"
+          text="allo allo"
+          ></Tag>
+          </TagGroup>
         <Box>
+
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
         </Box>

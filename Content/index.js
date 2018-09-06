@@ -1,8 +1,8 @@
 /**
- * Box Component
- * 
- * based on https://bulma.io/documentation/elements/box/
+ * Content Component
  *
+ * based on https://bulma.io/documentation/elements/content/
+ * 
  * @format
  * @flow
  */
@@ -11,7 +11,7 @@ import React, { Component } from 'react'
 import { View } from 'react-native'
 import styles from './styles'
 
-export class Box extends Component {
+export class Content extends Component {
   render() {
     const {
       children,
@@ -20,7 +20,7 @@ export class Box extends Component {
     return (
       <View
         style={[
-          styles.box,
+          styles.content,
         ]}
       >
         {children}
@@ -29,4 +29,4 @@ export class Box extends Component {
   }
 }
 
-export default Box
+export default Content

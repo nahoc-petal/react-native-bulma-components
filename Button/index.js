@@ -1,5 +1,7 @@
 /**
  * Button Component
+ * 
+ * based on https://bulma.io/documentation/elements/button/
  *
  * @format
  * @flow
@@ -50,7 +52,7 @@ export class Button extends Component {
             <Text
               style={[
                 text ? styles.text : null,
-                size ? styles[size] : null,
+                size ? styles[size] : styles['normal'],
                 textColor ? styles[textColor] : null,
                 disabled ? styles.textDisabled : null,
               ]}
